@@ -4,8 +4,10 @@
 #
 #  include omnidisksweeper
 class omnidisksweeper {
+
   package { 'OmniDiskSweeper':
-    provider => 'appdmg',
-    source   => 'https://yum.cegeka.be/osx_packages/OmniDiskSweeper-1.8.dmg',
+    provider => 'appdmg_eula',
+    source   => 'http://downloads2.omnigroup.com/software/MacOSX/10.6/OmniDiskSweeper-1.8.dmg',
   }
+
 }
