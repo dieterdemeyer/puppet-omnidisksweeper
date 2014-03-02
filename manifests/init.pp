@@ -3,11 +3,11 @@
 # Examples
 #
 #  include omnidisksweeper
-class omnidisksweeper {
+class omnidisksweeper($version='1.9') {
 
-  package { 'OmniDiskSweeper':
+  package { "OmniDiskSweeper-${version}":
     provider => 'appdmg_eula',
-    source   => 'http://downloads2.omnigroup.com/software/MacOSX/10.6/OmniDiskSweeper-1.8.dmg',
+    source   => "http://downloads2.omnigroup.com/software/MacOSX/10.8/OmniDiskSweeper-${version}.dmg",
   }
 
 }
